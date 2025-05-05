@@ -19,7 +19,7 @@ export default function Home() {
       {/* Main Content */}
       <main className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Simulation Card */}
-        <Card className="shadow-md">
+        <Card className="shadow-md rounded-sm">
           <CardHeader>
             <CardTitle>Simulación</CardTitle>
           </CardHeader>
@@ -29,7 +29,7 @@ export default function Home() {
         </Card>
 
         {/* Graph Card */}
-        <Card className="shadow-md">
+        <Card className="shadow-md rounded-sm">
           <CardHeader>
             <CardTitle>Gráfica Matemática</CardTitle>
           </CardHeader>
