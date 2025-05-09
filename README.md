@@ -13,21 +13,21 @@ La aplicación simula diferentes casos de sistemas masa-resorte:
 
 ## Plan de Implementación
 
-### Fase 1: Configuración Básica de la Interfaz ⏳
+### Fase 1: Configuración Básica de la Interfaz ✅
 - [x] Crear estructura básica de la aplicación Next.js
 - [x] Implementar componentes UI básicos (Cards, Buttons, etc.)
 - [x] Diseñar layout principal con áreas para simulación y gráfica
-- [ ] Implementar interfaz adicional si se requiere según las siguientes fases.
+- [X] Implementar interfaz adicional si se requiere según las siguientes fases.
 
-### Fase 2: Modelado Matemático ⏳
-- [ ] Implementar las ecuaciones diferenciales del sistema masa-resorte
-- [ ] Crear un solucionador numérico (método de Runge-Kutta o similar)
-- [ ] Adaptar el concepto de bloques de Simulink a funciones JavaScript:
-  - [ ] Bloque Add → Función de suma
-  - [ ] Bloques Integrator → Funciones de integración numérica
-  - [ ] Bloques Gain → Multiplicadores para parámetros
-  - [ ] Scope → Visualización usando biblioteca de gráficos
-  - [ ] Step → Generador de entrada escalón
+### Fase 2: Modelado Matemático ✅
+- [x] Implementar las ecuaciones diferenciales del sistema masa-resorte
+- [x] Crear un solucionador numérico (método de Runge-Kutta o similar)
+- [x] Adaptar el concepto de bloques de Simulink a funciones JavaScript:
+  - [x] Bloque Add → Función de suma (`createSumBlock`)
+  - [x] Bloques Integrator → Funciones de integración numérica (`createIntegratorBlock`)
+  - [x] Bloques Gain → Multiplicadores para parámetros (`createGainBlock`)
+  - [x] Scope → Visualización usando biblioteca de gráficos (`createScopeData`)
+  - [x] Step → Generador de entrada escalón (`createStepBlock`)
 
 ### Fase 3: Visualización Interactiva ⏳
 - [ ] Integrar una biblioteca de gráficos (Chart.js, D3.js o similar)
